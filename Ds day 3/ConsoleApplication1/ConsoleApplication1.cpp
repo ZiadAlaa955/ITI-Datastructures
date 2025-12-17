@@ -101,7 +101,7 @@ class BST {
     }
 
     int countLevelsHelper(Node* root) {
-        if (root == nullptr)return -1; //empty tree
+        if (root == nullptr)return 0; //empty tree
         else 
         {
             int leftLevels = countLevelsHelper(root->left);
@@ -111,6 +111,7 @@ class BST {
     }
 
     int countNodesHelper(Node* root) {
+        if (root == nullptr) return 0;
         return countNodesHelper(root->left) + 1 + countNodesHelper(root->right);
     }
 public:
