@@ -181,6 +181,10 @@ public:
         }
     }
 
+    ~BST() {
+        destroyTree(root);
+    }
+
 };
 
 int main()
