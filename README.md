@@ -12,6 +12,7 @@ The repository is organized by assignment to keep the codebase clean:
 | :--- | :--- | :--- |
 | **Assignment-01-Algorithms** | Basic sort & search algorithms | Selection, Bubble, Merge, Quick, and Heap Sort & Linear and Binary Search |
 | **Assignment-02-LinkedList** | Advanced Doubly Linked List, Stack and Queue | Inheritance, Polymorphism, Stack (LIFO), Queue (FIFO), Sorted Insertion |
+| **Assignment-04-vector&heap** |Dynamic Array (Vector) & Priority Queue (Binary Heap) | Templates, Dynamic Memory, Amortized Analysis, Percolate Up/Down, Sentinel Values |
 
 ---
 
@@ -32,6 +33,16 @@ The repository is organized by assignment to keep the codebase clean:
     * `UnsortedDLL`: Appends employees based on insertion order.
     * `Stack`: Inherits from UnsortedDLL to implement **LIFO** (Push/Pop).
     * `Queue`: Inherits from UnsortedDLL to implement **FIFO** (Enqueue/Dequeue).
+
+### Assignment 4: Dynamic Array & Binary Heap
+* **Objective:** Build robust, templated data structures from scratch to understand memory management and tree-based priority queues**.
+* **Architecture:**
+* `DynamicArray`: A resizable vector class handling generic types (T).
+* `Memory Management`: Implements the "Big Three" (Destructor, Copy Constructor, Assignment Operator) to ensure safe deep copying.
+* `Operations`: Supports push_back, pop_back, insertAt, removeAt, and dynamic resizing (Amortized O(1)).
+* `BinaryHeap`: An array-based implementation of a Min-Heap.
+* `Structure`: Uses 1-based indexing with a Sentinel value at index 0 to simplify parent/child calculations.
+* `Core Logic`: Efficient insert (percolate up) and deleteMin (percolate down) operations to maintain heap order.
 
 ---
 
